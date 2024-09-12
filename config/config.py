@@ -74,7 +74,7 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "7269619658").split())
+    map(int, getenv("OWNER_ID", "1808943146").split())
 )  # Input type must be interger
 
 
@@ -95,7 +95,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/NayraXRobot/VIP1",
+    "https://github.com/NayraXRobot/VIP",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -221,7 +221,7 @@ PING_IMG_URL = getenv(
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "https://telegra.ph/file/69623b2f2038ee17ef20d.jpg,
+    "https://telegra.ph/file/69623b2f2038ee17ef20d.jpg",
 )
 
 GLOBAL_IMG_URL = getenv(
@@ -312,7 +312,7 @@ if GITHUB_REPO:
 
 
 if PING_IMG_URL:
-    if PING_IMG_URL != "https://telegra.ph/file/69623b2f2038ee17ef20d.jpg":
+    if PING_IMG_URL != "https://telegra.ph/file/91533956c91d0fd7c9f20.jpg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
             print(
                 "[ERROR] - Your PING_IMG_URL url is wrong. Please ensure that it starts with https://"
